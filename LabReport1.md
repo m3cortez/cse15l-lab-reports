@@ -2,7 +2,7 @@
 
 ## How to log into a course-specific account on ***ieng6***
 
-## > **Install VS Code**
+> ## Install VS Code
 
 
 [VS Code Download](https://code.visualstudio.com/)
