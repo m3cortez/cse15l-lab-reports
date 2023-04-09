@@ -27,3 +27,15 @@ Type `ssh cs15lwi23zz@ieng6.ucsd.edu` into the terminal
 You should get a message warning about the authenticty of the server. This is your first time loging on so this is expected. Type `Y` to continue.
 
 After you should be prompted for your password. Keep in mind your typing may not be visible but it is indeed typing.
+
+> ## Running Commands
+  * `cd ~`
+  * `cd`
+  * `ls -lat`
+  * `ls -a`
+  * `ls <directory>`
+  The directory is `/home/linux/ieng6/cs15lwi23/cs15lwi23abc` and `abc` is the username of another member
+  * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
+  * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+
+
