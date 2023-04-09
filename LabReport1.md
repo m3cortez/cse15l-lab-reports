@@ -23,12 +23,18 @@ Next you will download Git which will be used to access the remote server. Use t
   * Open VS Code
   * Open the Terminal " ctrl + ` "
   * Open command Pallete using `ctrl + Shift + p`
+  
     ![image](https://user-images.githubusercontent.com/130080853/230758498-25081ce9-e668-4b13-a55c-4cfa0398d5fe.png)
+    
   * Type `Default Profile` and then click on the option
   * Select Git Bash from the options
+  *
   ![image](https://user-images.githubusercontent.com/130080853/230758530-bff8f831-7292-46e6-8fea-f7feed67d611.png)
+  
   * Then click the `+` icon on the terminal (this will open a new terminal which will load git)
+  *
   ![image](https://user-images.githubusercontent.com/130080853/230758546-a7fc1082-fa22-460c-8145-e4497ed88b66.png)
+  
   * You can also change between different terminals in the dropdown menu\
     ![image](https://user-images.githubusercontent.com/130080853/230758557-e0fb7334-4e8e-463d-89c9-2d67a2a02f71.png)
 
