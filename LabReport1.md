@@ -19,6 +19,7 @@ Next you will download Git which will be used to access the remote server. Use t
   ![Git download](https://user-images.githubusercontent.com/130080853/230439320-03449890-4e59-4a3a-b058-4e3d1b617ec8.JPG)
 ---
 > ## Using Git Bash on VS Code
+
   * Open VS Code
   * Open the Terminal " ctrl + ` "
   * Open command Pallete using `ctrl + Shift + p`
