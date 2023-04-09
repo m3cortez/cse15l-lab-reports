@@ -8,7 +8,7 @@ Click the link and this will take you to the VS Code download website. Download 
 
   [VS Code Download](https://code.visualstudio.com/)
   
-  ![VS Code download](https://user-images.githubusercontent.com/130080853/230438667-9e57d50e-1387-4521-907a-5d16a6530d88.JPG)
+  ![VS Code Download](https://user-images.githubusercontent.com/130080853/230762952-95549bec-5ffb-4b2d-96c4-6a10d15f18fd.png)
 ---
 > ## Download Git
 
