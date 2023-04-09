@@ -28,8 +28,8 @@ Next you will download Git which will be used to access the remote server. Use t
   ![image](https://user-images.githubusercontent.com/130080853/230758530-bff8f831-7292-46e6-8fea-f7feed67d611.png)
   * Then click the `+` icon on the terminal (this will open a new terminal which will load git)
   ![image](https://user-images.githubusercontent.com/130080853/230758546-a7fc1082-fa22-460c-8145-e4497ed88b66.png)
-  * You can also change between different terminals in the dropdown menu
-  ![image](https://user-images.githubusercontent.com/130080853/230758557-e0fb7334-4e8e-463d-89c9-2d67a2a02f71.png)
+  * You can also change between different terminals in the dropdown menu\
+    ![image](https://user-images.githubusercontent.com/130080853/230758557-e0fb7334-4e8e-463d-89c9-2d67a2a02f71.png)
 
   
 
@@ -49,14 +49,15 @@ After you should be prompted for your password. Keep in mind your typing may not
   
   * `cd ~` (Change Directory)
   * `cd`
-  * `ls -lat`(List)
+  * `ls -lat`(List)\
   ![image](https://user-images.githubusercontent.com/130080853/230758795-1492b8b8-c73f-4290-b7d8-64aa86507c49.png)
 
-  * `ls -a`
+  * `ls -a`\
     ![image](https://user-images.githubusercontent.com/130080853/230758842-767a7c9b-b20e-4d4a-a42a-56b5c54c4940.png)
 
   * `ls <directory>`
-  The directory is could be anything but an example could be `/home/linux/ieng6/cs15lsp23/abc` where `abc` is the username of another member (Access should be denied when running this command)
+  The directory is could be anything but an example could be `/home/linux/ieng6/cs15lsp23/abc` where `abc` is the username of another member (Access should be denied when running this command)\
+  
   ![image](https://user-images.githubusercontent.com/130080853/230758894-a1f5a27a-dbe3-4cf7-8f8f-8e6f1250edfe.png)
 
   * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
