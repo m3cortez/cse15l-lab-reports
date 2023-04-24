@@ -44,30 +44,43 @@ Next you will download Git which will be used to access the remote server. Use t
   
 > ## Connecting to remote server
 
-Type `ssh cs15lwi23zz@ieng6.ucsd.edu` into the terminal (this will begin to connect you to the remote server)
+Type `ssh cs15lwi23zz@ieng6.ucsd.edu` into the terminal 
+`wi23zz` should be replace with the informaiton of your specific student account. (this will begin to connect you to the remote server)
 
 You should get a message warning about the authenticty of the server. This is your first time loging on so this is expected. Type `Y` to continue.
+After you should be prompted for your password. 
 
-After you should be prompted for your password. Keep in mind your typing may not be visible but it is indeed typing.
+![image](https://user-images.githubusercontent.com/130080853/233894529-ae167e07-d04a-4fba-a2e8-5414eaf0a8da.png)
+
+Keep in mind your typing may not be visible but it is indeed typing.
+Once logged in you should be given some general information about the account and your system
+
+![image](https://user-images.githubusercontent.com/130080853/233895361-25b63ba1-a4f3-4390-87df-8a141efd4fbb.png)
+
 
 > ## Running Commands
   ## These are some commands you can try out
   
   
-  * `cd ~` (Change Directory)
-  * `cd`
-  * `ls -lat`(List)\
+  * `cd ~` (Change Directory) 
+  * `cd <Directory path>` This will change your wroking directory to the one entered
+  * `ls -lat`(List) This will give you a list of available directories and extra information about them
   ![image](https://user-images.githubusercontent.com/130080853/230758795-1492b8b8-c73f-4290-b7d8-64aa86507c49.png)
 
-  * `ls -a`\
+  * `ls -a` This command will do the same, but will give you a shorter version. This also just gives you directories starting with `.` or the hidden directories
+  
     ![image](https://user-images.githubusercontent.com/130080853/230758842-767a7c9b-b20e-4d4a-a42a-56b5c54c4940.png)
 
   * `ls <directory>`
-  The directory is could be anything but an example could be `/home/linux/ieng6/cs15lsp23/abc` where `abc` is the username of another member (Access should be denied when running this command)\
+  The directory is could be anything but an example could be `/home/linux/ieng6/cs15lsp23/abc` where `abc` is the username of another member (Access should be denied   when running this command) What ever directory entered will list what ever is in that directory
+  For example typing `/home/linux/ieng6/cs15lsp23` will list all possible accounts
   
   ![image](https://user-images.githubusercontent.com/130080853/230758894-a1f5a27a-dbe3-4cf7-8f8f-8e6f1250edfe.png)
 
   * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
   * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+  
+  ![image](https://user-images.githubusercontent.com/130080853/233901260-7376d21d-e3bf-4561-8c44-98f6a9c2a97b.png)
+
 
 
