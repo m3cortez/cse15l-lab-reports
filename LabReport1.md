@@ -28,11 +28,11 @@ Next you will download Git which will be used to access the remote server. Use t
     
   * Type `Default Profile` and then click on the option
   * Select Git Bash from the options
-  *
+  
   ![image](https://user-images.githubusercontent.com/130080853/230758530-bff8f831-7292-46e6-8fea-f7feed67d611.png)
   
   * Then click the `+` icon on the terminal (this will open a new terminal which will load git)
-  *
+  
   ![image](https://user-images.githubusercontent.com/130080853/230758546-a7fc1082-fa22-460c-8145-e4497ed88b66.png)
   
   * You can also change between different terminals in the dropdown menu\
