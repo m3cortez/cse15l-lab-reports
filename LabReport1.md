@@ -77,10 +77,16 @@ Once logged in you should be given some general information about the account an
   
   ![image](https://user-images.githubusercontent.com/130080853/230758894-a1f5a27a-dbe3-4cf7-8f8f-8e6f1250edfe.png)
 
-  * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
-  * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
+  * `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/` this will copy the files to a directory
+  * `cat /home/linux/ieng6/cs15lwi23/public/hello.txt` This will read the files and directories inside the given path
+  In this example `hello.txt` does not exist and therefore cannot be copied or read by the commands
   
   ![image](https://user-images.githubusercontent.com/130080853/233901260-7376d21d-e3bf-4561-8c44-98f6a9c2a97b.png)
+  
+  An example where `cat <directory>` works is with `cat .bash_history` here it reads all the previous commands inputed, which is stored in this directory
+  
+  ![image](https://user-images.githubusercontent.com/130080853/233902625-d9b1b785-1a8a-4cf6-b2b1-f3b49d360dae.png)
+
 
 
 
