@@ -13,7 +13,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/")) {
             return String.join("\n", result);
         } 
-        else if (url.getPath().contains("/add")) {
+        else if (url.getPath().contains("/add-message")) {
             if(query.startsWith("s=")) {
                 result.add(query.split("=")[1]);
                 return String.join("\n", result);
