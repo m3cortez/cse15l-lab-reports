@@ -4,7 +4,7 @@ I chose to find interesting and alterantive ways to use the `grep` command. The 
 For specifics I prompted ChatGPT with `Is there any alternative ways to use the grep command in bash?` and by asking `How is the grep command normally used in bash?`.<br/>
 <br/>
 <br/>
->## Using ```grep``` to search for a string through an entire directory
+>## Using `grep` to search for a string through an entire directory
 
 By using this format ```grep -r <string> <directory>```<br/>
 The command will search for that string in this directory and all of its subdirectories.
@@ -13,11 +13,12 @@ The command will search for that string in this directory and all of its subdire
 
 Command Line:
 
-```grep -r "1999" technical```
+`grep -r "1999" technical`
 
 Output: </br>
 
-```technical/911report/chapter-11.txt:            In the period between December 1999 and early January 2000, information about
+```
+technical/911report/chapter-11.txt:            In the period between December 1999 and early January 2000, information about
 technical/911report/chapter-13.3.txt:                terrorism between 1999 and July 2001, with special attention on domestic
 technical/911report/chapter-13.4.txt:                about the maritime operation sometime in late 1999 and credited Nashiri as its
 technical/911report/chapter-13.4.txt:                Arabia in 1999 and 2000 to meet with Saudi officials on terrorist financing
@@ -34,7 +35,8 @@ Command Line:
 
 Output: </br>
 
-```technical/biomed/1471-2377-1-2.txt:        Massachusetts. In 1998, Broderick et al [ 5] hypothesized
+```
+technical/biomed/1471-2377-1-2.txt:        Massachusetts. In 1998, Broderick et al [ 5] hypothesized
 technical/biomed/1471-2377-1-2.txt:        recent estimates of Broderick et al [ 5] and Williams et
 technical/biomed/1471-2377-1-2.txt:        Broderick et al [ 5] and Williams et al [ 8] by
 technical/government/About_LSC/commission_report.txt:Broderick, Jr. Edna Fairbanks-Williams F.Wm. McCalpin Maria Luisa
@@ -61,7 +63,8 @@ Command Line:
 `grep "September" technical/911report/* --exclude=chapter-1*.txt`
 
 Output: </br>
-```technical/911report/chapter-2.txt:                most militant opponents. But after September 1996, when first Jalalabad and then
+```
+  technical/911report/chapter-2.txt:                most militant opponents. But after September 1996, when first Jalalabad and then
 technical/911report/chapter-3.txt:                immigration authorities at John F. Kennedy International Airport in September 1992
 technical/911report/chapter-3.txt:                in September 2001, one year after Watson presented his plan to field executives,
 technical/911report/chapter-3.txt:                years before September 11, terrorism seldom registered as important. To the extent
@@ -80,7 +83,8 @@ Command Line:
 
 Output: </br>
   
-```technical/plos/pmed.0010036.txt:        acute phase of infection in humans and animals exposed to AIDS-associated retroviruses
+```
+technical/plos/pmed.0010036.txt:        acute phase of infection in humans and animals exposed to AIDS-associated retroviruses
 technical/plos/pmed.0010041.txt:        against viruses that are normally cleared or controlled by the immune system [9].
 technical/plos/pmed.0010048.txt:        viruses circulating in the population,” says Walker.
 technical/plos/pmed.0020015.txt:        are usually associated with viruses [28] and of documented, virus-associated pneumonia
@@ -107,7 +111,9 @@ Command Line:
 `grep -C 3 "Plane" technical/911report/*`
 
 Output: </br>
-```technical/911report/chapter-1.txt-
+  
+```
+technical/911report/chapter-1.txt-
 technical/911report/chapter-1.txt-    Unidentified Female Voice: They have what?
 technical/911report/chapter-1.txt-
 technical/911report/chapter-1.txt:    Boston Center: Planes, as in plural.
@@ -126,7 +132,8 @@ Command Line:
 
 Output: </br>
 
-```technical/911report/chapter-8.txt-            The FBI agent who handled the case in conjunction with the INS representative on the
+```
+technical/911report/chapter-8.txt-            The FBI agent who handled the case in conjunction with the INS representative on the
 technical/911report/chapter-8.txt:                Minneapolis Joint Terrorism Task Force suspected that Moussaoui might be planning to
 technical/911report/chapter-8.txt-                hijack a plane. Minneapolis and FBI headquarters debated whether Moussaoui should be
   ```
@@ -146,7 +153,8 @@ Command Line:
 
 Output: </br>
 
-```technical/plos/journal.pbio.0020001.txt:        output between the developing and already developed countries (Gibbs 1995; May 1997;
+```
+technical/plos/journal.pbio.0020001.txt:        output between the developing and already developed countries (Gibbs 1995; May 1997;
 technical/plos/journal.pbio.0020001.txt:        the world (Gibbs 1995; May 1997; Alonso and Fernández-Juricic 2001; Vohora and Vohora
 technical/plos/journal.pbio.0020001.txt:        number of their publications between 1990 and 1997 by 36% and 70%, respectively, which is a
 technical/plos/journal.pbio.0020001.txt:        publications between the developed world and the developing world from 1990 until 2000,
@@ -164,7 +172,8 @@ Command Line:
 
 Output: </br>
 
-```technical/plos/journal.pbio.0020439.txt:        From the time of the ancient Greek physician Galen (131–201 C.E.) until William Harvey
+```
+  technical/plos/journal.pbio.0020439.txt:        From the time of the ancient Greek physician Galen (131–201 C.E.) until William Harvey
 technical/plos/journal.pbio.0020439.txt:        period from 300 B.C.E. to 200 C.E. (in a work by Chiu Chang Suan Shu called 
   ```
 
