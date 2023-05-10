@@ -15,7 +15,7 @@ Command Line:
 
 `grep -r "1999" technical`
 
-Output: </br>
+Output: 
 
 ```
 technical/911report/chapter-11.txt:            In the period between December 1999 and early January 2000, information about
@@ -33,7 +33,7 @@ Command Line:
 
 `grep -r "Broderick" technical`
 
-Output: </br>
+Output: 
 
 ```
 technical/biomed/1471-2377-1-2.txt:        Massachusetts. In 1998, Broderick et al [ 5] hypothesized
@@ -62,7 +62,7 @@ Command Line:
 
 `grep "September" technical/911report/* --exclude=chapter-1*.txt`
 
-Output: </br>
+Output: 
 ```
   technical/911report/chapter-2.txt:                most militant opponents. But after September 1996, when first Jalalabad and then
 technical/911report/chapter-3.txt:                immigration authorities at John F. Kennedy International Airport in September 1992
@@ -81,7 +81,7 @@ Command Line:
 
 `grep -r "viruses" technical/plos --exclude=journal.pbio.*`
 
-Output: </br>
+Output: 
   
 ```
 technical/plos/pmed.0010036.txt:        acute phase of infection in humans and animals exposed to AIDS-associated retroviruses
@@ -110,7 +110,7 @@ Command Line:
 
 `grep -C 3 "Plane" technical/911report/*`
 
-Output: </br>
+Output: 
   
 ```
 technical/911report/chapter-1.txt-
@@ -130,7 +130,7 @@ Command Line:
 
 `grep -C 1 "Task Force" technical/911report/*`
 
-Output: </br>
+Output: 
 
 ```
 technical/911report/chapter-8.txt-            The FBI agent who handled the case in conjunction with the INS representative on the
@@ -151,7 +151,7 @@ Command Line:
 
 `grep "199[0-5]" technical/plos/*`
 
-Output: </br>
+Output: 
 
 ```
 technical/plos/journal.pbio.0020001.txt:        output between the developing and already developed countries (Gibbs 1995; May 1997;
@@ -170,7 +170,7 @@ Command Line:
 
 `grep "[000-999] C.E." technical/plos/*`
 
-Output: </br>
+Output: 
 
 ```
   technical/plos/journal.pbio.0020439.txt:        From the time of the ancient Greek physician Galen (131–201 C.E.) until William Harvey
