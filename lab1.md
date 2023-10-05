@@ -5,7 +5,6 @@
 > ## Examples using `cd`, `ls`, `cat` command lines
 
 
-
 ## **Examples using no arguments**
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/514a4b78-7aac-465e-bd7a-9c889ea0cf25)
