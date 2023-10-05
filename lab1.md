@@ -27,7 +27,7 @@
 
   So after pressing enter what ever you wrote will be printed again. That is because it the input to `cat` in what ever you type in the line. The output would just be reading what you wrote. You will stay in this mode until you exit which you can do by pressing `ctrl` + `D`. 
   
-
+>
   
 ## **Examples using a path to a directory as an argument**
 
@@ -47,7 +47,7 @@ Here typing `ls <path to directory>` will list all files and directories in the 
 
 Here typing `cat <path to directory>` will give us an output saying that our path is a directory. This is an error because we can't `cat` directories.
 
-
+>
 
 ## **Examples using a path to a file as an argument**
 
