@@ -4,7 +4,7 @@
 
 > ## Examples using `cd`, `ls`, `cat` command lines
 
-<br> </br>
+</br>
 
 ## **Examples using no arguments**
 
@@ -12,13 +12,13 @@
 
   Here typing `cd` into the command line give us no output, but using `pwd` we can see that typing the command directed our current directory to the home directory.
 
-<br> </br>
+</br>
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/4021f54a-a8f3-4bcd-943a-916200d59785)
 
   Here typing `ls` into the command line gives us any files or folders in our current directory. In this case we only see the `lecture1` folder because it is the only file in our current directory. (our home directory in this case)
   
-<br></br>
+</br>
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/75d7111d-dbea-4e4a-bf11-1f5e4de7b67e)
 
@@ -28,7 +28,7 @@
 
   So after pressing enter what ever you wrote will be printed again. That is because it the input to `cat` in what ever you type in the line. The output would just be reading what you wrote. You will stay in this mode until you exit which you can do by pressing `ctrl` + `D`. 
   
-  <br></br>
+</br>
   
 ## **Examples using a path to a directory as an argument**
 
@@ -36,19 +36,19 @@
 
 Here typing `cd <path to a directory` will change current directory to the directory path give. In this case from our home directory we change to the messages directory in the `lecture1` folder 
 
-<br></br>
+</br>
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/56ee6178-c88e-4fa7-8fbc-e734b75ea935)
 
 Here typing `ls <path to directory>` will list all files and directories in the directory path we provided. In this case it list all the `.txt` files inside the messages directory. Our current directory is not changed.
 
-<br></br>
+</br>
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/b54daa80-6c70-48d3-8f03-16a3364c1920)
 
 Here typing `cat <path to directory>` will give us an output saying that our path is a directory. This is an error because we can't `cat` directories.
 
-<br></br>
+</br>
 
 ## **Examples using a path to a file as an argument**
 
