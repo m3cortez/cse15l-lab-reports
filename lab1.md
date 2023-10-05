@@ -27,7 +27,7 @@
 
   So after pressing enter what ever you wrote will be printed again. That is because it the input to `cat` in what ever you type in the line. The output would just be reading what you wrote. You will stay in this mode until you exit which you can do by pressing `ctrl` + `D`. 
   
-> </b>
+<br> </br>
   
 ## **Examples using a path to a directory as an argument**
 
