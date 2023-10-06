@@ -26,8 +26,8 @@
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/4226ae49-4d00-44b6-8432-1df85b49fdf8)
 
   So after pressing enter what ever you wrote will be printed again. That is because it the input to `cat` in what ever you type in the line. The output would just be reading what you wrote. You will stay in this mode until you exit which you can do by pressing `ctrl` + `D`. 
+
   
-<br> </br>
   
 ## **Examples using a path to a directory as an argument**
 
