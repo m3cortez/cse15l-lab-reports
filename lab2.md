@@ -4,10 +4,6 @@
 
 ## **Part 1** 
 
-Which methods in your code are called?
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-
 > ## String Server Code
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/64799581-a5e9-4e1a-9083-3e6d642df3a6)
@@ -35,11 +31,28 @@ Then in the String Server code`getPath` method takes returns the path, which can
 In this request the `line` field was updated from 1 to 2 from our last request. The word field was updated from `Hello World!` to `Hello!!!`, and lastly the `str` field was updated from `1. Hello World` to 
 `1. Hello World!
 2. Hello!!!`
-
-
-
-
   
 ## **Part 2**
 
+The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer)
+The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6)
+A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
+
+>## Path to private key
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/00a8503d-b8ec-456c-a1da-963063a8df23)
+
+
+>## Path to public key
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/e88667bd-d8f0-40aa-a1af-7b4b7a08b6ba)
+
+
+>## ieng6 login with no password
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/ccdca1a1-9982-4742-8b5b-85fdf795c869)
+
+
 ## **Part 3**
+
+From these last 2 labs I learned more about how the NumberServer and the String Server work. I didn't know exactly what methods were being used in the code. Now I know that the get methods for the Query and the Path. I also know more about `String.format()`. Using the `%s`, `%d` and other variations, which I think is going to be more helpful in writing code.
