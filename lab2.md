@@ -6,7 +6,7 @@
 
 > ## String Server Code
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/64799581-a5e9-4e1a-9083-3e6d642df3a6)
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/99b5fb00-1c3d-43a6-af26-e2211fe86928)
 
 > ## First instace using `/add-message`
 
