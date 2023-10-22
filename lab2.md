@@ -28,7 +28,7 @@ In this specific request the `line` field is change to increment by 1. The `word
 
 In this request the same methods are called. We `getPath` is used to get `/add-message`, then use the `equals` method to check that the path is valid, then the `getQuery` to get `?s=Hello!!!`, then using the split method to our parameters `s` and `Hello!!!`. We use again the `equals` method to check that our paramter `s` is the valid paramter. 
 
-The in the String Server code`getPath` method takes returns the path, which can be `/` or `/add-message` in this case. The   `getQuery` method returns the query which in this case is `?s=Hello!!!`. From our 3 fields our line field is updated again to give us 2, our `word` field is updated to `Hello!!!`, then our `str` field is updated to 
+Then in the String Server code`getPath` method takes returns the path, which can be `/` or `/add-message` in this case. The   `getQuery` method returns the query which in this case is `?s=Hello!!!`. From our 3 fields our line field is updated again to give us 2, our `word` field is updated to `Hello!!!`, then our `str` field is updated to 
 `1. Hello World!
 2. Hello!!!`
 
