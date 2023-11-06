@@ -17,8 +17,7 @@
 
 I looked up find command options and came upon the link https://man7.org/linux/man-pages/man1/find.1.html
 The website says that using this command will find files that match a pattern while ignoring metacharacters like `/` and `.`
-This is different than our normal find command because it took in a directory path, so if the directory doesn't exist then there would be an error.
-The format is `find -path "<pattern>"` the pattern needs to be in quotes.
+The format is `find -path "<pattern>"` the pattern needs to be in quotes. This is different than our normal find command because it took in a directory path, so if the directory doesn't exist then there would be an error.
 
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/ce75b3a2-9acf-4112-ac7d-d5e598fa9ab3)
 
