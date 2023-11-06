@@ -8,14 +8,47 @@
 
 ## failure inducing input
 
-`  @Test 
-	public void testReverseInPlaceReg() {
-    int[] input1 = {3,2,1};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{1,2,3}, input1);
-	}
+`  @Test`<br>
+`  public void testReverseInPlaceReg() {`<br>
+`   int[] input1 = {3,2,1};`<br>
+`   ArrayExamples.reverseInPlace(input1);`<br>
+`   assertArrayEquals(new int[]{1,2,3}, input1);`<br>
+`   }
  `
 
+## non-failure inducing input
+
+`  @Test`<br>
+`  public void testReverseInPlaceReg() {`<br>
+`   int[] input1 = {3};`<br>
+`   ArrayExamples.reverseInPlace(input1);`<br>
+`   assertArrayEquals(new int[]{3}, input1);`<br>
+`   }
+ `
+
+## Sympton Output
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/84768d49-a0ff-4d98-bc71-4abd5d50c5a4)
+
+## Before and after Bug fix
+
+> Before
+
+`static void reverseInPlace(int[] arr) {`<br>
+`   for(int i = 0; i < arr.length/2; i += 1) {`<br>
+`      arr[i] = arr[arr.length - i - 1];`<br>
+`      }`<br>
+`  }`<br>
+
+> After
+
+`static void reverseInPlace(int[] arr) {`<br>
+`   for(int i = 0; i < arr.length/2; i += 1) {`<br>
+`      int temp = arr[i];`<br>
+`      arr[i] = arr[arr.length - i - 1];`<br>
+`      arr[arr.length - i - 1] = temp;`<br>
+`      }`<br>
+`  }`<br>
 
 
 ## **Part 2**
