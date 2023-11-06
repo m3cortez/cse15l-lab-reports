@@ -43,9 +43,9 @@ A terminal interaction where you log into ieng6 with your course-specific accoun
 ![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/00a8503d-b8ec-456c-a1da-963063a8df23)
 
 
->## Path to public key
+>## Path to public key on ieng6 account
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/e88667bd-d8f0-40aa-a1af-7b4b7a08b6ba)
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/45e3ac28-6b02-49d0-ab0d-db25219f46be)
 
 
 >## ieng6 login with no password
