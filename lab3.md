@@ -13,8 +13,7 @@
 `   int[] input1 = {3,2,1};`<br>
 `   ArrayExamples.reverseInPlace(input1);`<br>
 `   assertArrayEquals(new int[]{1,2,3}, input1);`<br>
-`   }
- `
+`   }`
 
 ## non-failure inducing input
 
