@@ -56,22 +56,26 @@
 
 > Before
 
-`static void reverseInPlace(int[] arr) {
-   for(int i = 0; i < arr.length/2; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-      }
-  }`
+`static void reverseInPlace(int[] arr) {`<br>
+`   for(int i = 0; i < arr.length/2; i += 1) {`<br>
+`      arr[i] = arr[arr.length - i - 1];`<br>
+`      }`<br>
+`  }`<br>
 
 > After
 
-`static void reverseInPlace(int[] arr) {
-   for(int i = 0; i < arr.length/2; i += 1) {
-      int temp = arr[i];
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length - i - 1] = temp;
-      }
-  }`
+`static void reverseInPlace(int[] arr) {`<br>
+`   for(int i = 0; i < arr.length/2; i += 1) {`<br>
+`      int temp = arr[i];`<br>
+`      arr[i] = arr[arr.length - i - 1];`<br>
+`      arr[arr.length - i - 1] = temp;`<br>
+`      }`<br>
+`  }`<br>
 
+> Explaination
+
+In the before code we would change the current index element to the element if the array was reversed, but in doing so we lose the data of what the previous element was. 
+In the after code I created a temp variable to store the value of the curr index element. I would then do the switch from the before code. This time I remember to not only change the current index but also the corresponding index towards the end of the array.
 
 ## **Part 2**
 
@@ -81,11 +85,21 @@
 
 I looked up find command options and came upon the link https://man7.org/linux/man-pages/man1/find.1.html. Here is says that `find -path` searches for paths that match a pattern. Using this option it ignores special characters like `/` and `.`. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/c01f2ca4-754c-4961-8122-57aaba23ac6b)
+`$ find -path "*plos*med"`<br>
+`./technical/plos/pmed.0010008.txt`<br>
+`./technical/plos/pmed.0010010.txt`<br>
+`./technical/plos/pmed.0010012.txt`<br>
+`...`<br>
 
 Here I am searching for files in the `technical/plos` directory that have the keyword "med". This is useful because I can search for specific patterns in all the file paths of the my current directory. It is similar to the `grep` command but instead of searching a text file, I am searching recursivly all the file paths in my current directory. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/7d347f8a-407e-4750-94c8-5bbb191062b5)
+`$ find -path "*gov*.com*"`<br>
+`./technical/government/About_LSC/commission_report.txt`<br>
+`./technical/government/Alcohol_Problems/DraftRecom-PDF.txt`<br>
+`./technical/government/Media/grants_fail_to_come.txt`<br>
+`./technical/government/Media/Low-income_children.txt`<br>
+`./technical/government/Post_Rate_Comm/Cohenetal_comparision.txt`<br>
+`...`<br>
 
 In this example, I am searching the government folder and getting the paths that reference the keyword "com". This command in general is helpful especially if the file structure is unknown or if it is too long to use a regular find command. 
 
@@ -94,11 +108,11 @@ In this example, I am searching the government folder and getting the paths that
 
 Again I got my information from https://man7.org/linux/man-pages/man1/find.1.html after searching for "find command options". The purpose of this command is to delete the files provided by the find command. This doesn't work for directories that have items in them. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/847c530f-07fd-4657-b998-9f66ff077428)
+`$ find -path "*911*chapter-1.txt" -delete`<br>
 
 In this example I decided to combine the `-path` option with `-delete`. This command doesn't output anything in the terminal, but when you look back at the files it will show that the file or files you found using the find command will be deleted. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/a1a13642-65d1-4046-bb94-963d9739bb8b)
+`$ find -path "*911report" -delete`<br>
 
 When `find` only gives you directories the `-delete` option will cause an error saying that you can't delete directories. This is because only empty directories can be delete.
 
@@ -106,13 +120,31 @@ When `find` only gives you directories the `-delete` option will cause an error 
 
 I got the information of this option from the same website https://man7.org/linux/man-pages/man1/find.1.html. Here it says that this command helps find files that are less than or equal to the amount of units of space specified. The valid units are `b` , `c`, `w`, `k`, `M`, `G` which represent different sized units of space. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/397591be-68d8-4823-90c7-4bbd5c2a6117)
+`$ find technical/ -size -10G`<br>
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/bd0b8398-d77a-4b27-b3e8-ee77581f2f25)
+`technical/plos/pmed.0020208.txt`<br>
+`technical/plos/pmed.0020209.txt`<br>
+`technical/plos/pmed.0020210.txt`<br>
+`technical/plos/pmed.0020212.txt`<br>
+`technical/plos/pmed.0020216.txt`<br>
+`...`<br>
+
 
 Here I used the find command to specify the files that are less than or equal to 10 gigabytes of space. This brings us every file since none are over 10 gigabytes
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/14f20413-e016-481e-a35c-46dd1ba85c55)
+`$ find technical/ -size -1c`<br>
+`technical/`<br>
+`technical/911report`<br>
+`technical/biomed`<br>
+`technical/government`<br>
+`technical/government/About_LSC`<br>
+`technical/government/Alcohol_Problems`<br>
+`technical/government/Env_Prot_Agen`<br>
+`technical/government/Gen_Account_Office`<br>
+`technical/Media`<br>
+`technical/Post_Rate_Comm`<br>
+`technical/plos`<br>
+`...`<br>
 
  In this example I now search for paths that are less than or equal to 1 byte. This ends up returning just paths to directories. Since the directories themselves are less than equals to 1 byte of space. 
 
@@ -122,11 +154,31 @@ Here I used the find command to specify the files that are less than or equal to
 
 I also got this information from the same website https://man7.org/linux/man-pages/man1/find.1.html. Here it says that the `-type` option helps find file paths of certain types. The valid types are `b`,`c`,`d`,`p`,`f`,`l`,`s`,`D`. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/a6561e90-94b7-4039-b683-aca919086f89)
+`$ find technical/ -type d`
+`technical/`<br>
+`technical/911report`<br>
+`technical/biomed`<br>
+`technical/government`<br>
+`technical/government/About_LSC`<br>
+`technical/government/Alcohol_Problems`<br>
+`technical/government/Env_Prot_Agen`<br>
+`technical/government/Gen_Account_Office`<br>
+`technical/Media`<br>
+`technical/Post_Rate_Comm`<br>
+`technical/plos`<br>
+`...`<br>
 
 In this example I am the -type d` means I am looking for directories. So my put is all the directories and sub directories of `/technical`. 
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/aa4c4e34-aa00-4c25-8f62-f5cc088d0412)
+`$ find technical/911report -type f`<br>
+`technical/911report/chapter-10.txt`<br>
+`technical/911report/chapter-11.txt`<br>
+`technical/911report/chapter-12.txt`<br>
+`technical/911report/chapter-13.1.txt`<br>
+`technical/911report/chapter-13.2.txt`<br>
+`technical/911report/chapter-13.3.txt`<br>
+`technical/911report/chapter-13.4.txt`<br>
+`...`<br>
 
 Now in this example `type f` is refering to all regular files. So the command is asking for all the files in `technical/911report`. 
 
