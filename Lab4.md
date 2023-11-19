@@ -11,11 +11,11 @@ Log in to `ieng6` by typing `ssh cs15lfa23rt@ieng6.ucsd.edu<enter>`
 
 >## Step 5
 
-Clone the repository using the ssh url by typing `git clone git@github.com:ucsd-cse15l-s23/lab7.git<enter>`
+Clone the repository using the ssh url by typing `git clone git@github.com:m3cortez/lab7.git<enter>`
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/a91125b2-baed-4e1e-9280-557b3a6d8545)
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/af74e7a2-4356-45e4-9687-4670b1991b84)
 
-After type `cd lab7` to change into the directory
+After type `cd lab7<enter>` to change into the directory
 
 >## Step 6
 
@@ -45,7 +45,7 @@ Then rerun the test to show it succeeds by typing `bash test.sh<enter>`
 
 >## Step 9
 
-Then to add and commit these changes type `git commit -a -m <commit message>`
+Then to add and commit these changes type `git commit -a -m <commit message> <enter>`
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/d77cc012-8e35-471c-8166-9ccb9c092bf8)
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/f925b0da-15a8-455b-a404-d7d142f44b57)
 
