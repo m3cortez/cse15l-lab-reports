@@ -1,11 +1,51 @@
 # `Lab Report 4`
 
-## Vim
+# Vim
 
-> ## Original Attempt
+>## Step 4
+
+Log in to `ieng6` by typing `ssh cs15lfa23rt@ieng6.ucsd.edu<enter>` 
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/4336f27e-4a69-45f6-ba48-4b2cb0ce273c)
 
 
+>## Step 5
 
->## New PR
+Clone the repository using the ssh url by typing `git clone git@github.com:ucsd-cse15l-s23/lab7.git<enter>`
 
->## What I changed
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/a91125b2-baed-4e1e-9280-557b3a6d8545)
+
+After type `cd lab7` to change into the directory
+
+>## Step 6
+
+Then run the intial test by typing `bash test.sh<enter>`
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/5254c1f8-e0ea-49b1-9ce1-41590692196e)
+
+
+>## Step 7
+
+Next to fix the code type `vim ListExamples.java<enter>` to begin editing the file. 
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/4bc7212c-9a79-4416-8997-c4b6a489bf19)
+
+
+Then type `/index1<enter>`. This is going to search the file for all instances that match "index1". To move between the different time they show up type `nnnnnnnnn` or type `n` 9 times. Then press `e` to move to the end of the word "index1". Then type `r2` to replace the character with a "2". After save the file by pressing `:wq<enter>
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/d32920ac-4a63-41fd-a7cb-6cb1a258e793)
+
+
+>## Step 8
+
+Then rerun the test to show it succeeds by typing `bash test.sh<enter>`
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/43681a21-0e40-495e-8a0d-417b614a852b)
+
+
+>## Step 9
+
+Then to add and commit these changes type `git commit -a -m <commit message>`
+
+![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/d77cc012-8e35-471c-8166-9ccb9c092bf8)
+
