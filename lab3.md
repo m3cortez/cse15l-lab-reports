@@ -8,25 +8,49 @@
 
 ## failure inducing input
 
-  `@Test
-   public void testReverseInPlaceReg() {
-   int[] input1 = {3,2,1};
-   ArrayExamples.reverseInPlace(input1);
-   assertArrayEquals(new int[]{1,2,3}, input1);
-   }`
+  `@Test`<br>
+   `public void testReverseInPlaceReg() {`<br>
+   `int[] input1 = {3,2,1};`<br>
+   `ArrayExamples.reverseInPlace(input1);`<br>
+   `assertArrayEquals(new int[]{1,2,3}, input1);`<br>
+   `}`<br>
 
 ## non-failure inducing input
 
-   `@Test
-   public void testReverseInPlaceReg() {
-   int[] input1 = {3};
-   ArrayExamples.reverseInPlace(input1);
-   assertArrayEquals(new int[]{3}, input1);
-   }`
+   `@Test`<br>
+   `public void testReverseInPlaceReg() {`<br>
+   `int[] input1 = {3};`<br>
+   `ArrayExamples.reverseInPlace(input1);`<br>
+   `assertArrayEquals(new int[]{3}, input1);`<br>
+   `}`<br>
 
 ## Sympton Output
 
-![image](https://github.com/m3cortez/cse15l-lab-reports/assets/130080853/84768d49-a0ff-4d98-bc71-4abd5d50c5a4)
+`java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore`<br> `ArrayTests`<br>
+`JUnit version 4.13.2`<br>
+`..E`<br>
+`Time: 0.013`<br>
+`There was 1 failure:`<br>
+`1) testReverseInPlaceReg(ArrayTests)`<br>
+`arrays first differed at element [2]; expected:<3> but was:<1>`    
+`        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)`<br>
+`        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)`<br>
+`        at org.junit.Assert.internalArrayEquals(Assert.java:534)`  
+`        at org.junit.Assert.assertArrayEquals(Assert.java:418)`    
+`        at org.junit.Assert.assertArrayEquals(Assert.java:429)`    
+`        at ArrayTests.testReverseInPlaceReg(ArrayTests.java:16)`   
+`        ... 30 trimmed`<br>
+`Caused by: java.lang.AssertionError: expected:<3> but was:<1>`     
+`        at org.junit.Assert.fail(Assert.java:89)`<br>
+`        at org.junit.Assert.failNotEquals(Assert.java:835)`        
+`        at org.junit.Assert.assertEquals(Assert.java:120)`<br>
+`        at org.junit.Assert.assertEquals(Assert.java:146)`<br>
+`        at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)`<br>
+`        at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)`<br>
+`        ... 36 more`<br>
+
+`FAILURES!!!`<br>
+`Tests run: 2,  Failures: 1`<br>
 
 ## Before and after Bug fix
 
